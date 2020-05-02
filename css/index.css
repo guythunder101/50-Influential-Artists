@@ -1,4 +1,167 @@
-/* Font in design files is Raleway */
-
-/* background-image in Design 👇
- url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg/1920px-John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg'); */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+header {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 50px;
+  width: 100%;
+  height: 100%;
+}
+header nav {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  color: #504949;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 50vw;
+    height: 30vh;
+  }
+}
+header nav a {
+  text-align: center;
+  margin: 0 10px;
+  border: 1px solid lightgray;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  display: inline-block;
+  background: white;
+}
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+  height: 50vh;
+}
+@media (max-width: 500px) {
+  header img {
+    width: 50vw;
+    height: 30vh;
+  }
+}
+header img.hover {
+  opacity: 80%;
+}
+section.title-container {
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body section {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px;
+}
+body section div.artist {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 10vh;
+}
+body section div.artist2 {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 30vh;
+}
