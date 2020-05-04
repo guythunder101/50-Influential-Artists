@@ -212,7 +212,8 @@ console.log(artists[0]["name"] + artists[4]["Bio"])
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-
+artists.splice(8, 1, "Vincent Van Gogh")
+console.log(artists[8])
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -223,9 +224,10 @@ console.log(artists[0]["name"] + artists[4]["Bio"])
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
 function getArtistByIndex(id, name) {
-    
+    console.log(id[name]["name"])
   }
   
+  getArtistByIndex(artists, 0)
   /**
 
 
@@ -237,21 +239,29 @@ function getArtistByIndex(id, name) {
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
 */
-function removeArtist(/*code here*/) {
-    /* code here */
+function removeArtist(id, name) {
+    id.splice(name, 1)
+    console.log(id.splice(name, 1))
   }
   
+  removeArtist(artists, 0)
+
   /**
 
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt(/* Code here */){
+function lotsOfArt(id){
+for (i = 0; i < artists.length; i++){
+if(artists[i]["paintings"] > 100){
+  console.log(artists[i]["name"])
+}
 
-    /* Code here */
 
+}
+    
   }
-
+lotsOfArt(artists)
 
 /* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
 
@@ -262,12 +272,17 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */){
-
-    /* Code here */
+function addArtist(id){
+artists.push(`id: 21
+  name: Dalton, 
+  years: 1999 - current day,
+  genre: Web Design, 
+  nationality: 'Merica
+  bio: He did a thing.`)
+    console.log(id[18]) 
 
   }
-
+  addArtist(artists)
 
 
 
