@@ -223,8 +223,8 @@ console.log(artists[8])
  * For example, if getArtistByIndex is invoked with the inventory and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
-function getArtistByIndex(id, name) {
-    console.log(id[name]["name"])
+function getArtistByIndex(artists, id) {
+    console.log(artists[id].name)
   }
   
   getArtistByIndex(artists, 0)
@@ -253,8 +253,8 @@ function removeArtist(id, name) {
 
 function lotsOfArt(id){
 for (i = 0; i < artists.length; i++){
-if(artists[i]["paintings"] > 100){
-  console.log(artists[i]["name"])
+if(artists[i].paintings > 100){
+  console.log(artists[i].name)
 }
 
 
@@ -273,12 +273,12 @@ nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
 function addArtist(id){
-artists.push(`id: 21
-  name: Dalton, 
-  years: 1999 - current day,
-  genre: Web Design, 
-  nationality: 'Merica
-  bio: He did a thing.`)
+artists.push({id: 21,
+  name: "Dalton",
+  years: "1999 - current day",
+  genre: "Web Design",
+  nationality: "Merica",
+  bio: "He did a thing",})
     console.log(id[18]) 
 
   }
