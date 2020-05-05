@@ -102,6 +102,10 @@ header {
   width: 100%;
   height: 100%;
 }
+header nav {
+  color: black;
+  font-size: 1.6rem;
+}
 header div.contact {
   text-align: center;
   font-size: 25px;
@@ -128,9 +132,6 @@ header img {
     height: 30vh;
   }
 }
-header img.hover {
-  opacity: 80%;
-}
 section.title-container {
   font-size: 25px;
   position: absolute;
@@ -138,14 +139,24 @@ section.title-container {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.contact {
+  display: flex;
+  justify-content: center;
+  left: 30%;
+  position: relative;
+  left: -40%;
+}
 .contact a {
-  margin: 0 10px;
+  margin: 0 auto;
   border: 1px solid lightgrey;
   padding: 20px;
   border-radius: 20px;
   font-size: 20px;
   display: inline-block;
   background: white;
+}
+img:hover {
+  opacity: 80%;
 }
 body section {
   display: flex;

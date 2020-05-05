@@ -6,6 +6,10 @@ header{
   width: 100%;
   height: 100%;
   
+  nav {
+    color: black;
+    font-size: 1.6rem;
+  }
 
     div.contact{
         text-align: center;
@@ -33,9 +37,7 @@ header{
             height: 30vh;
               }
     }
-    img.hover{
-        opacity: 80%;
-    }
+    
 }
 section.title-container{
     font-size: 25px;
@@ -47,14 +49,26 @@ section.title-container{
  
 }
 .contact {
-	a{
-	  margin: 0 10px;
-	  border: 1px solid lightgrey;
-	  padding: 20px;
-	  .button-filling(@20px);
-	  .white-block(@white, @block);
-	}
+  display: flex;
+  justify-content: center;
+  left: 30%;
+  position: relative;
+  left: -40%;
+  a {
+    margin: 0 auto;
+    border: 1px solid lightgrey;
+    padding: 20px;
+    .button-filling(@20px);
+    .white-block(@white, @block);
+  }
 }
+img:hover{
+  opacity: 80%;
+}
+
+
+
+
 
 
 
